@@ -22,7 +22,6 @@ if(isset($_POST["data"])){
         $content = file_get_contents("test.mp3");
         var_dump($_POST);
 
-        echo $content;
         echo "test";
 
         $ausgabe = "\n";
@@ -31,8 +30,7 @@ if(isset($_POST["data"])){
         $ausgabe+= $re->recognizeByFileBuffer($data,0,10);
         $ausgabe+= "\n";
 
-
-        echo $ausgabe+= $re->recognizeByFileBuffer($content, 0, 10);
+        echo $ausgabe;
 
         echo json_encode($ausgabe);
 ?>
