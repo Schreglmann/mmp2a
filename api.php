@@ -22,6 +22,9 @@ if(isset($_POST["data"])){
         $content = file_get_contents("test.mp3");
         var_dump($_POST);
 
+        echo $content;
+        echo "test";
+
         $ausgabe = "\n";
         $ausgabe+= $re->recognizeByFileBuffer($content, 0, 10);
         $ausgabe+= "\n";
