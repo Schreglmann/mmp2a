@@ -7,7 +7,7 @@ require 'recipe/common.php';
 set('application', 'mmp2a_test');
 
 // Project repository
-set('repository', 'https://github.com/Schreglmann/mmp2a");
+set('repository', 'https://github.com/Schreglmann/mmp2a');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', false); 
