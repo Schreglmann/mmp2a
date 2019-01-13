@@ -31,5 +31,8 @@ if(isset($_POST["data"])){
         $ausgabe+= $re->recognizeByFileBuffer($data,0,10);
         $ausgabe+= "\n";
 
+
+        echo $ausgabe+= $re->recognizeByFileBuffer($content, 0, 10);
+
         echo json_encode($ausgabe);
 ?>
