@@ -22,15 +22,11 @@ if(isset($_POST["data"])){
         $content = file_get_contents("/home/georg/sites/mmp2a_test/current/test.mp3");
         var_dump($_POST);
 
-        echo "test";
-
-        $ausgabe = "\n";
-        $ausgabe = $ausgabe.$re->recognizeByFileBuffer($content, 0, 10);
-        $ausgabe = "\n";
+        $ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
+        $ausgabe = $ausgabe."\n";
         $ausgabe = $ausgabe.recognizeByFileBuffer($data,0,10);
-        $ausgabe = "\n";
 
         echo $ausgabe;
-
+        echo "JSON";
         echo json_encode($ausgabe);
 ?>
