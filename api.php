@@ -24,7 +24,7 @@ if(isset($_POST["data"])){
 
         $ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
         $ausgabe = $ausgabe."\n";
-        $ausgabe = $ausgabe.recognizeByFileBuffer($data,0,10);
+        $ausgabe = $ausgabe.$re->recognizeByFileBuffer($data,0,10);
 
         echo $ausgabe;
         echo "JSON";
