@@ -25,10 +25,10 @@ if(isset($_POST["data"])){
         echo "test";
 
         $ausgabe = "\n";
-        $ausgabe+= $re->recognizeByFileBuffer($content, 0, 10);
-        $ausgabe+= "\n";
-        $ausgabe+= $re->recognizeByFileBuffer($data,0,10);
-        $ausgabe+= "\n";
+        $ausgabe = $ausgabe.$re->recognizeByFileBuffer($content, 0, 10);
+        $ausgabe = "\n";
+        $ausgabe = $ausgabe.recognizeByFileBuffer($data,0,10);
+        $ausgabe = "\n";
 
         echo $ausgabe;
 
