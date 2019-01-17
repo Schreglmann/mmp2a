@@ -24,6 +24,7 @@ if(isset($_POST["data"])){
         $ausgabe="";
         //$ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
         //$ausgabe = $ausgabe."\n";
+        echo $data;
         $ausgabe = $ausgabe.$re->recognizeByFileBuffer($data,0,10);
 
         //echo $ausgabe;
