@@ -26,5 +26,6 @@ if(isset($_POST["data"])){
         //$ausgabe = $ausgabe."\n";
         $ausgabe = $ausgabe.$re->recognizeByFileBuffer($data,0,10);
 
-        echo json_encode($ausgabe);
+        echo $ausgabe;
+        //echo json_encode($ausgabe);
 ?>
