@@ -19,7 +19,7 @@ if(isset($_POST["data"])){
         );
         $re = new ACRCloudRecognizer($config);
 
-        //$content = file_get_contents("test.mp3");
+        $content = file_get_contents("test.mp3");
         var_dump($_POST);
         $ausgabe="";
         $ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
