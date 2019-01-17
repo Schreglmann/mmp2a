@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/common.php';
 
 // Project name
-set('application', 'mmp2a_test');
+set('application', 'musicr');
 
 // Project repository
 set('repository', 'https://github.com/Schreglmann/mmp2a');
@@ -23,8 +23,8 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 
-host('georg@37.120.187.53')
-    ->set('deploy_path', '/home/georg/sites/{{application}}');    
+host('deployer@37.120.187.53')
+    ->set('deploy_path', '/home/deployer/sites/{{application}}');    
 
 
 // Composer
