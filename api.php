@@ -22,12 +22,12 @@ if(isset($_POST["data"])){
         $content = file_get_contents("test.mp3");
         //var_dump($_POST);
         $ausgabe="";
-        //$ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
+        $ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
         //$ausgabe = $ausgabe."\n";
-        echo $data;
+        //echo $data;
         //secho "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
         //echo $content;
-        $ausgabe = $ausgabe.$re->recognizeByFileBuffer($data,0,10);
+        //$ausgabe = $ausgabe.$re->recognizeByFileBuffer($data,0,10);
 
         //echo $ausgabe;
         echo json_encode($ausgabe);
