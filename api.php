@@ -17,7 +17,7 @@ if(isset($_POST["data"])){
                 'host' => 'identify-eu-west-1.acrcloud.com',
                 'access_key' => 'a96b884113ffeb58429cece86edbf129',
                 'access_secret' => 'isbKQI0JAW0as2udufahHwgU1V8QNxsb05JTeaPz',
-                'recognize_type' => ACRCloudRecognizeType::ACR_OPT_REC_AUDIO // ACR_OPT_REC_AUDIO/ACR_OPT_REC_HUMMING/ACR_OPT_REC_BOTH
+                'recognize_type' => ACRCloudRecognizeType::ACR_OPT_REC_BOTH // ACR_OPT_REC_AUDIO/ACR_OPT_REC_HUMMING/ACR_OPT_REC_BOTH
         );
         $re = new ACRCloudRecognizer($config);
 
