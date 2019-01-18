@@ -6,7 +6,7 @@ if(isset($_POST["data"])){
         $data = "hi";
 }
 
-        $content = file_getcontents($_FILES['file']['tmp_name']);
+        $content = file_get_contents($_FILES['file']['tmp_name']);
 
 
         ini_set("display_errors", 1);
