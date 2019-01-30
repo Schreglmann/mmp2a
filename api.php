@@ -1,4 +1,5 @@
 <?php namespace ACRCloud;
+header("Access-Control-Allow-Origin: *");
 $data = "";
 if(isset($_POST["data"])){
         $data = $_POST["data"];
