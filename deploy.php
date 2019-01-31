@@ -16,9 +16,6 @@ set('git_tty', false);
 set('shared_files', ['.htaccess']);
 //set('shared_dirs', ['wp-content/uploads']);
 
-// Writable dirs by web server 
-//set('writable_mode', 'chown');
-//set('writable_dirs', ['wp-content/uploads']);
 set('allow_anonymous_stats', false);
 
 // Hosts
