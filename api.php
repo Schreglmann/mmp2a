@@ -15,7 +15,7 @@ if(isset($_POST["data"])){
                 echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
             }
 
-
+            echo $content;
         ini_set("display_errors", 1);
         include_once('acrcloud_recognizer.php');
 
