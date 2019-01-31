@@ -13,7 +13,7 @@ set('repository', 'https://github.com/Schreglmann/mmp2a');
 set('git_tty', false); 
 
 // Shared files/dirs between deploys 
-//set('shared_files', ['wp-config.php']);
+set('shared_files', ['.htaccess']);
 //set('shared_dirs', ['wp-content/uploads']);
 
 // Writable dirs by web server 
