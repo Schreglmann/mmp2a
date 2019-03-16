@@ -1,6 +1,6 @@
 <?php namespace ACRCloud;
 header("Access-Control-Allow-Origin: *");
-        $content = file_get_contents($_FILES['file']['tmp_name']);
+        $audioFileFromUser = file_get_contents($_FILES['file']['tmp_name']);
 
         ini_set("display_errors", 1);
         include_once('acrcloud_recognizer.php');
@@ -11,8 +11,7 @@ header("Access-Control-Allow-Origin: *");
                 'access_secret' => 'isbKQI0JAW0as2udufahHwgU1V8QNxsb05JTeaPz',
                 'recognize_type' => ACRCloudRecognizeType::ACR_OPT_REC_BOTH // ACR_OPT_REC_AUDIO/ACR_OPT_REC_HUMMING/ACR_OPT_REC_BOTH
         );
-        $re = new ACRCloudRecognizer($config);
+        $APIAnswer = new ACRCloudRecognizer($config);
 
-        $ausgabe = $re->recognizeByFileBuffer($content, 0, 10);
-        echo $ausgabe;
+        echo $APIAnswer->recognizeByFileBuffer($audioFileFromUser, 0, 10);
 ?>
